@@ -23,6 +23,7 @@
 
     <!-- Comentario -->
     <header>
+      <iframe style="width: 100%; aspect-ratio: 16/9;" width="560" height="315" src="https://www.youtube.com/embed/nH0TDibT9GU?si=18uAAfRxIb8ZIxB3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <h1>Portfolio de @jabdi</h1>
       <nav>
         <a href="#experiencia">Experiencia</a>
@@ -37,7 +38,23 @@
       </nav>
     </header>
 
-    <video controls src="https://www.youtube.com/watch?v=nH0TDibT9GU"></video>
+    <dialog id="modal">
+      <h1>Otra forma de abrir un modal</h1>
+      <p>Esta forma es nativa</p>
+      <button id="hide">Cerrar modal</button>
+    </dialog>
+
+    <button id="show">Ver modal</button>
+
+    <script>
+      window.show.addEventListener('click', () => {
+        window.modal.showModal()
+      })
+
+      window.hide.addEventListener('click', () => window.modal.close())
+    </script>
+
+    <!-- <video controls src="https://www.youtube.com/watch?v=nH0TDibT9GU"></video> -->
 
     <main>
       <p>+4 años de experiencia como <strong>Ingeniero de Software</strong>. Bailarin de salsa y bachata.</p>
